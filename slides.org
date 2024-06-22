@@ -1,0 +1,87 @@
+#+title: The Imaging Platform's data
+#+OPTIONS: ^:nil toc:nil num:nil H:2
+#+DATE: 2024/06/24
+#+Author: Alán F. Muñoz
+# #+LaTeX_CLASS: beamer
+#+BEAMER_THEME: metropolis
+#+LATEX_HEADER: \usepackage{graphicx}
+* What kind of data can we extract from cells?
+** Why images?
+:PROPERTIES:
+:BEAMER_env: fullframe
+:END:
+#+begin_src latex
+\makebox[\textwidth]{\includegraphics[page=1,width=1.2\textwidth]{borrowed/pg_0004.pdf}}
+#+end_src
+** Cell Painting
+:PROPERTIES:
+:BEAMER_env: fullframe
+:END:
+#+begin_src latex
+\makebox[\textwidth]{\includegraphics[page=1,width=1.2\textwidth]{borrowed/pg_0008.pdf}}
+#+end_src
+* Cell Painting Gallery
+** The data from a wide variety of projects
+- Raw images
+- Illumination adjustments
+- Morphological Profiles
+  - Single-cell level
+  - Aggregated profiles
+- Segmentation masks
+- Deep Learning Embeddings
+** Data open and available on AWS
+[[./imgs/cpg_aws.png]]
+** Search and browse metadata
+[[./imgs/cpg_overview.png]]
+** Includes in in-browser SQL
+[[./imgs/cpg_duckdb.png]]
+* Joint-Undertaking for Morphological Profiling (JUMP)
+** JUMP data composition
+:PROPERTIES:
+:BEAMER_env: fullframe
+:END:
+#+begin_src latex
+\makebox[\textwidth]{\includegraphics[page=1,width=1.2\textwidth]{borrowed/pg_0019.pdf}}
+#+end_src
+** There is plenty of information to explore
+:PROPERTIES:
+:BEAMER_env: frame
+:END:
+*** Left :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.4
+:END:
+- Raw images
+#+ATTR_LATEX: :width 1.0\textwidth
+[[./imgs/cellpainting.png]]
+- Metadata tables
+#+ATTR_LATEX: :width 1.0\textwidth
+[[./imgs/metadata_table.png]]
+*** Right :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.4
+:END:
+- Morphological profiles
+#+ATTR_LATEX: :width 1.0\textwidth
+[[./imgs/profile_diagram.png]]
+- Notebooks
+#+ATTR_LATEX: :width 1.0\textwidth
+[[./imgs/notebook.png]]
+
+** Similar morphological profiles
+[[./imgs/simile.jpg]]
+** Most distinctive features for a given gene
+[[./imgs/feature.jpg]]
+** Image exploration
+[[./imgs/gallery.jpg]]
+** Methods of access: Software engineers
+We provide Python packages to integrate in your analyses
+- =broad_babel:= Synonyms and treatment metadata
+- =jump_portrait:= Download images from gene names/chemical SMILES or fetch into your notebooks
+
+* Resources
+** Resources
+- =broad.io/jump:= JUMP tutorials and info hub
+- =broad.io/monorepo:= Imaging Platform Computational tools
+- =broad.io/cpg:= For metadata exploration website
+- =slides:= github.com/afermg/2024_06_broadhacks
